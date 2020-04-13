@@ -10,7 +10,7 @@ The necessary files are
     - Register: registers a new unique email Id and a password
 - 'models/User.js': defines a model for User
     - Fields included are email(unique), password and token
-    - 
+    - Methods defined are findUserByCredentials, generateNewAuthToken, logout and logoutAll 
 - 'utils/middleware.js': has a middleware
     - 'authenticated' which checks the token in the request header and returns user object if valid
 - 'utils/password.js': has methods that aid password operations
@@ -34,5 +34,5 @@ The necessary files are
 4. Import 'routes/user.js' into 'app.js' and use the route appropriately
 
 ## ToDo
-[ ] Add environment variables support
-[ ] Generate auth token immediately after register to prevent additional login
+- [ ] Add environment variables support
+- [ ] Generate auth token immediately after register to prevent additional login
